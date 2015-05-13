@@ -1,3 +1,13 @@
 <div class="well">
   {{ message }}
 </div>
+
+<ul class="list-group">
+    <li ng-repeat="thing in things" class="list-group-item">
+        {{ thing.name }}
+        <br />
+        {{ thing.color }}
+        <br />
+        {{ thing.description }}
+    </li>
+</ul>
