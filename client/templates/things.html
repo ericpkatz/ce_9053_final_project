@@ -4,7 +4,7 @@
 
 <ul class="list-group">
     <li ng-repeat="thing in things" class="list-group-item">
-        {{ thing.name }}
+        <a href="/things/{{thing._id}}">{{ thing.name }}</a>
         <br />
         {{ thing.color }}
         <br />

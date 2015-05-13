@@ -16,7 +16,7 @@ app.set("view engine", "jade");
 app.use(express.static(__dirname + "/client"));
 app.use(bodyParser.json());
 
-var paths = ["/", "/people/:id?", "/things", "/login"];
+var paths = ["/", "/people/:id?", "/things/:id?", "/login"];
 staticRoutes.setUp(paths, app);
 
 app.use("/api/people", peopleRouter);
